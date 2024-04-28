@@ -1,0 +1,250 @@
+{
+    "tiles": [
+        {
+            "URL": "https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png",
+            "attr": "CyclOSM"
+        },
+        {
+            "URL": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+            "attr": "OpenTopoMap"
+        },
+        {
+            "URL": "https://api.mapbox.com/v4/mapbox.mapbox-terrain-v2/{z}/{x}/{y}@2x.jpg90?access_token=",
+            "attr": "MapBox"
+        }
+    ],
+    "waypoints": [
+        {
+            "name-it": "Rifugion Auronzo",
+            "name-de": null,
+            "location": [
+                46.612599,
+                12.295504
+            ],
+            "w3w": "///tracce.micetto.elevati",
+            "url": "http://www.rifugioauronzo.it/it.html"
+        },
+        {
+            "name-it": "Rifugio Lavaredo",
+            "name-de": null,
+            "location": [
+                46.618377,
+                12.312262
+            ],
+            "w3w": "///tappare.indetto.gara",
+            "url": "http://www.rifugiolavaredo.com/home.html"
+        },
+        {
+            "name-it": "Rifugio Antonio Locatelli",
+            "name-de": "Dreizinnenhütte",
+            "location": [
+                46.636896,
+                12.310634
+            ],
+            "w3w": "///fata.fornite.stonate",
+            "url": "https://www.dreizinnenhuette.com/index.php"
+        },
+        {
+            "name-it": "Rifugio Pian di Cengia",
+            "name-de": "Büllelejochhüte",
+            "location": [
+                46.631667,
+                12.341167
+            ],
+            "w3w": "///casuale.nettarina.parete",
+            "url": "https://www.rifugiopiandicengia.it/en/"
+        },
+        {
+            "name-it": "Rifugio Comici",
+            "name-de": "Zsigmondyhütte",
+            "location": [
+                46.628408,
+                12.357866
+            ],
+            "w3w": "///bramare.appende.pagelle",
+            "url": ""
+        },
+        {
+            "name-it": "Rifugio Fondovalle",
+            "name-de": "Talschlusshütte",
+            "location": [
+                46.702245,
+                12.348698
+            ],
+            "w3w": "///salate.arredi.medi",
+            "url": "https://www.talschlusshuette.com/it/"
+        },
+        {
+            "name-it": "Rifugio Prati di Croda Rossa",
+            "name-de": "Rotwandwiesenhütte",
+            "location": [
+                46.665327,
+                12.369758
+            ],
+            "w3w": "///calati.quaglie.osteria",
+            "url": "https://www.rotwandwiesenhuette.it/de/"
+        },
+        {
+            "name-it": "Rifugio Rudi",
+            "name-de": "Rudi Hütte",
+            "location": [
+                46.664495,
+                12.372408
+            ],
+            "w3w": "///stufa.noie.magici",
+            "url": "https://www.floralp.biz/it/rifugio-rudi/"
+        },
+        {
+            "name-it": "Rifugio Berti",
+            "name-de": "Berti Hütte",
+            "location": [
+                46.631006,
+                12.40607
+            ],
+            "w3w": "///muoveva.perdere.buttate",
+            "url": "http://www.rifugioberti.it/"
+        },
+        {
+            "name-it": "Rifugio Carducci",
+            "name-de": null,
+            "location": [
+                46.615267,
+                12.373524
+            ],
+            "w3w": "///ricambi.sfamato.abitare",
+            "url": "http://www.rifugiocarducci.eu/"
+        },
+        {
+            "name-it": "Rifugio Italo Lunelli",
+            "name-de": null,
+            "location": [
+                46.634152,
+                12.419969
+            ],
+            "w3w": "///falchi.dura.scade",
+            "url": ""
+        },
+        {
+            "name-it": "Rifugio Malga Nemes",
+            "name-de": null,
+            "location": [
+                46.671741307970095,
+                12.433660142736134
+            ],
+            "w3w": "///usanze.tritato.cenni",
+            "url": "http://www.alpe-nemes.com/"
+        },
+        {
+            "name-it": "Rifugio Rinfreddo",
+            "name-de": null,
+            "location": [
+                46.661867,
+                12.456934
+            ],
+            "w3w": "///incisa.levami.polsi",
+            "url": "http://www.rifugiorinfreddo.it/"
+        },
+        {
+            "name-it": "Malga Coltrondo",
+            "name-de": null,
+            "location": [
+                46.663349684022236,
+                12.450306238493592
+            ],
+            "w3w": "///interi.corona.ferrate",
+            "url": "https://www.malgacoltrondo.it/"
+        },
+        {
+            "name-it": null,
+            "name-de": "Obstansersee-Hütte",
+            "location": [
+                46.684367,
+                12.493746
+            ],
+            "w3w": "///decoriamo.salirci.pubblicate",
+            "url": "https://www.alpenverein.at/huetten-it/index.php?huette_nr=0165"
+        },
+        {
+            "name-it": null,
+            "name-de": "Porze-Hütte",
+            "location": [
+                46.659753,
+                12.582222
+            ],
+            "w3w": "///regista.credici.pegni",
+            "url": "https://www.alpenverein.at/huetten-it/index.php?huette_nr=0179"
+        },
+        {
+            "name-it": null,
+            "name-de": "Filmoorhütte",
+            "location": [
+                46.670633,
+                12.534324
+            ],
+            "w3w": "///sovrapposti.cavi.estivo",
+            "url": "https://www.filmoorhuette.com/"
+        },
+        {
+            "name-it": "Passo di Monte Croce di Comelico",
+            "name-de": "Kreuzbergpass",
+            "location": [
+                46.655738,
+                12.420471
+            ],
+            "w3w": "///interi.corona.ferrate",
+            "url": null
+        }
+    ],
+    "ferrata": [
+        {
+            "name": "Cengia Gabriella",
+            "location": [
+                46.617109,
+                12.393501
+            ],
+            "w3w": ""
+        },
+        {
+            "name": "Alta Pusteria ",
+            "location": [
+                46.645216,
+                12.371475
+            ],
+            "w3w": "///binari.ballerò.sedervi"
+        },
+        {
+            "name": "Toblinger Knoten",
+            "location": [
+                46.641739,
+                12.308056
+            ],
+            "w3w": "///vinti.aveva.ospite"
+        },
+        {
+            "name": "Frankfurter Würstel",
+            "location": [
+                46.635017,
+                12.312717
+            ],
+            "w3w": "///rumore.elevare.rapa"
+        },
+        {
+            "name": "Zadonella",
+            "location": [
+                46.64199,
+                12.382488
+            ],
+            "w3w": "///mondani.mescoli.vedeva"
+        },
+        {
+            "name": "",
+            "location": [],
+            "w3w": ""
+        },
+        {
+            "name": "",
+            "location": [],
+            "w3w": ""
+        }
+    ]
+}

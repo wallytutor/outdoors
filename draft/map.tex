@@ -1,0 +1,87 @@
+\documentclass[a3]{article}
+\usepackage{booktabs}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{tabularx}
+
+\geometry{margin=0cm}
+\setmainfont{Arial}
+
+\newcommand{\plotmap}[2]{%
+\vspace*{0.1mm}%
+\begin{center}%
+%%%%% IMAGE TABLE
+\begin{tabularx}{0.98\linewidth}{>{\centering\arraybackslash}X}%
+\toprule[2pt]%
+\includegraphics[width=\linewidth]{#1}%
+\tabularnewline%
+\midrule[2pt]%
+\textbf{#2}%
+\tabularnewline%
+\bottomrule[2pt]%
+\end{tabularx}%
+%
+\par\vspace{6pt}%
+%
+%%%%% DESCRIPTION TABLE
+\begin{tabularx}{0.98\linewidth}{rl}%
+Trek distance     &
+\tabularnewline[6pt]%
+Min/Max. altitude &
+\tabularnewline[6pt]%
+Via ferrata       &
+\tabularnewline[6pt]%
+Contact &
+\tabularnewline%
+\bottomrule[2pt]%
+\end{tabularx}%
+\end{center}%
+%%%%% NEW PAGE
+\clearpage%
+}
+
+\begin{document}
+\begin{landscape}
+\plotmap%
+	{map-0.png}%
+	{Day 1 - From the Kreuzbergpass via the Knieberg to the Obstanserseehütte}%
+	
+\plotmap%
+	{map-1.png}%
+	{Day 2 - From the Obstanserseehütte via the Kinigat Via Ferrata to the Neue Porze Hütte}%
+	
+\plotmap%
+	{map-2.png}
+	{Day 3 - From the Porze Hütte via the Porze and the Corrado d'Ambros Via Ferrata to the Filmoor Standschützenhütte}%
+	
+\plotmap%
+	{map-3.png}%
+	{Day 4 - }%
+
+\plotmap%
+	{map-4.png}
+	{Day 5 - }%
+	
+\plotmap%
+	{map-5.png}%
+	{Day 6 - }%
+	
+\plotmap%
+	{map-6.png}%
+	{Day 7 - }%
+	
+\plotmap%
+	{map-7.png}%
+	{Day 8 - }%
+
+\plotmap%
+	{map-8.png}%
+	{Day 9 - }%
+	
+\plotmap%
+	{map-dolomiti.png}%
+	{Dolomiti Senza Confini}%
+\end{landscape}
+\end{document}

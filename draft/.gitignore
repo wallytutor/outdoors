@@ -1,0 +1,9 @@
+config_secrets.py
+
+*.log
+*.html
+*.png
+*.aux
+*.pdf
+*.synctex*
+*.gpx

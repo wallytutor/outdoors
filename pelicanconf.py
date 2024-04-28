@@ -44,7 +44,7 @@ IGNORE_FILES = [".#*", "*.yaml"]
 
 # Static paths are processed after articles, so this must be included to avoid
 # failure; otherwise files will get processed and skipped!
-ARTICLE_EXCLUDES = ["media"]
+ARTICLE_EXCLUDES = ["draft", "media"]
 
 # Paths to be copied to final outputs.
 STATIC_PATHS     = ["media"]
