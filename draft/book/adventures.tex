@@ -1,0 +1,46 @@
+\documentclass[10pt,twocolumn,oneside]{book}
+\usepackage{adventures}
+
+\title{Adventures}
+\author{Walter Dal'Maz Silva}
+\date{}
+
+% Image resizing command:
+% magick.exe mogrify -resize 50% image.jpg
+
+\begin{document}
+\frontmatter%
+
+\tableofcontents%
+
+\mainmatter%
+
+\input{contents/foreword.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Via ferrata
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\part{Via Ferrata}
+\input{contents/via-ferrata-intro.tex}
+\input{contents/via-ferrata-des-lacs-robert.tex}
+\input{contents/via-ferrata-les-prises-de-la-bastille.tex}
+\input{contents/via-ferrata-upcoming.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Rock climbing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\part{Rock Climbing}
+\input{contents/rock-climbing-intro.tex}
+\input{contents/rock-climbing-upcoming.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Trekking
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\part{Trekking}
+\input{contents/trekking-intro.tex}
+\input{contents/trekking-upcoming.tex}
+
+\end{document}

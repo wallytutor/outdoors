@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% adventures.sty
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{adventures}[2022/12/29 Adventures Book Style]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Set caption
+\RequirePackage[font=small,labelfont=bf]{caption}
+
+% Continuous figure/table enumerations.
+\RequirePackage{chngcntr}
+
+% General programming utilities.
+\RequirePackage{etoolbox}
+
+% Create custom headers and footers.
+\RequirePackage{fancyhdr}
+
+% Specify font (XeLaTeX only).
+\RequirePackage{fontspec}
+
+% Set margins, page size, ...
+\RequirePackage{geometry}
+
+% Add images, graphics.
+\RequirePackage{graphicx}
+
+% Hyperlinks in text.
+\RequirePackage{hyperref}
+
+% Get *inparaenum* environment.
+\RequirePackage{paralist}
+
+% Set line spacing.
+\RequirePackage{setspace}
+
+% Add quantities with units.
+%\RequirePackage{siunitx}
+
+% Specially formatted tables.
+\RequirePackage{tabularx}
+
+% Add colored boxes to text.
+\RequirePackage[most]{tcolorbox}
+
+% Format section titles.
+\RequirePackage[explicit]{titlesec}%
+
+% Add dots to TOC.
+\RequirePackage{tocloft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Requirements options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\geometry{margin=20mm}
+\setmainfont{Arial}
+
+% Continuous numbering of figures and tables.
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+% Dots in TOC
+\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Headers and footers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+
+\fancypagestyle{plain}{%
+	\fancyhf{}%
+	\fancyfoot[C]{\hfill\thepage\hfill}%
+	\renewcommand{\headrulewidth}{2pt}%
+	\renewcommand{\footrulewidth}{1pt}%
+}
+
+\fancypagestyle{main}{%
+	\fancyhf{}%
+	\fancyhead[LE]{\nouppercase{\rightmark\hfill\leftmark}}
+	\fancyhead[RO]{\nouppercase{\leftmark\hfill\rightmark}}
+	\fancyfoot[C]{\hfill\thepage\hfill}
+	\renewcommand{\headrulewidth}{2pt}%
+	\renewcommand{\footrulewidth}{1pt}%
+}
+
+\appto\frontmatter{\pagestyle{plain}}
+\appto\mainmatter{\pagestyle{main}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter headings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{chapgreen}{RGB}{54, 155, 10}
+
+\newcommand{\bgparbox}[1]{%
+	\colorbox{chapgreen}{%
+		\setlength{\fboxsep}{6pt}%
+		\begin{tabularx}%
+			{\dimexpr\linewidth-\fboxsep}%
+			{l>{\raggedright\arraybackslash}X}%
+			#1%
+		\end{tabularx}%
+	}%
+}
+
+\titleformat{\chapter}[display]
+	{\color{white}\bfseries\huge}
+	{}
+	{0em}
+	{\bgparbox{#1}}%
+
+\titlespacing{\chapter}{0pt}{-43pt}{20pt} 
+
+\titlespacing*{\section}{0pt}{9pt plus 1pt minus 1pt}{6pt}
+
+% https://tex.stackexchange.com/questions/218663
+% Note: using titletoc approach didn't get the way I expected, so use this:
+\makeatletter
+\let\latexl@chapter\l@chapter%
+\def\l@chapter#1#2{%
+	\begingroup\let\numberline\@gobble\latexl@chapter{#1}{#2}%
+	\endgroup%
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% 'sans serif' option
+%\DeclareOption{sans}{
+%	\renewcommand{\familydefault}{\sfdefault}
+%}
+%
+%%% 'roman' option
+%\DeclareOption{roman}{
+%	\renewcommand{\familydefault}{\rmdefault}
+%}
+%
+%%% Global indentation option
+%\newif\if@neverindent\@neverindentfalse
+%\DeclareOption{neverindent}{
+%	\@neverindenttrue
+%}
+%
+%\ExecuteOptions{roman}
+%
+%\ProcessOptions\relax
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Defaults
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newlength{\pardefault}
+%\setlength{\pardefault}{\parindent}
+%\newcommand{\neverindent}{ \setlength{\parindent}{0pt} }
+%\newcommand{\autoindent}{ \setlength{\parindent}{\pardefault} }
+%
+%\if@neverindent
+%\neverindent
+%\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Specific commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\place}[1]{\textbf{\emph{#1}}}
+
+\newcommand{\todowarn}[1]{%
+	\noindent%
+	\begin{minipage}{\textwidth}%
+		\noindent%
+		\begin{center}%
+			\begin{tcolorbox}[%
+				colback=red!75!black,%
+				colframe=red!75!black,%
+				coltext=white,%
+				fontupper=\bfseries
+				]%
+				\centering{}#1%
+			\end{tcolorbox}%
+		\end{center}%
+	\end{minipage}%
+}
+
+\endinput
