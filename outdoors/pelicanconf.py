@@ -1,14 +1,19 @@
 AUTHOR = "Walter Dal'Maz Silva"
-SITENAME = 'Outdoors'
-SITEURL = ""
+
+SITENAME = "Outdoors"
+
+# SITEURL = ""
+# SITEURL = "https://wallytutor.github.io/outdoors/"
 
 PATH = "content"
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = "Europe/Paris"
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = "English"
 
 THEME = "notmyidea"
+
+GITHUB_URL = "https://github.com/wallytutor/outdoors"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -33,3 +38,14 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+# List of patters for files to be excluded.
+IGNORE_FILES = [".#*", "*.yaml"]
+
+# Static paths are processed after articles, so this must be included to avoid
+# failure; otherwise files will get processed and skipped!
+ARTICLE_EXCLUDES = ["media"]
+
+# Paths to be copied to final outputs.
+STATIC_PATHS     = ["media"]
+

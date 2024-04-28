@@ -2,7 +2,11 @@
 # LOCAL
 ##############################################################################
 
+# Content produced locally by Pelican.
 /outdoors/output/
+
+# Raw GPX tracks will all points.
+*.gpx.orig
 
 ##############################################################################
 # PYTHON
