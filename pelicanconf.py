@@ -2,8 +2,8 @@ AUTHOR = "Walter Dal'Maz Silva"
 
 SITENAME = "Outdoors"
 
-# SITEURL = ""
-# SITEURL = "https://wallytutor.github.io/outdoors/"
+# Keep this empty here to render properly, overriden in publishconf.py.
+SITEURL = ""
 
 PATH = "content"
 
@@ -44,7 +44,7 @@ IGNORE_FILES = [".#*", "*.yaml"]
 
 # Static paths are processed after articles, so this must be included to avoid
 # failure; otherwise files will get processed and skipped!
-ARTICLE_EXCLUDES = ["draft", "media"]
+ARTICLE_EXCLUDES = ["draft", "media", "venv"]
 
 # Paths to be copied to final outputs.
 STATIC_PATHS     = ["media"]
