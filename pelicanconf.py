@@ -13,7 +13,7 @@ DEFAULT_LANG = "en"
 
 THEME = "notmyidea"
 
-GITHUB_URL = "https://github.com/wallytutor/outdoors"
+# GITHUB_URL = "https://github.com/wallytutor/outdoors"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -37,7 +37,7 @@ LINKS = (
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 # List of patters for files to be excluded.
 IGNORE_FILES = [".#*", "*.yaml"]
@@ -48,4 +48,3 @@ ARTICLE_EXCLUDES = ["draft", "media", "venv"]
 
 # Paths to be copied to final outputs.
 STATIC_PATHS     = ["media"]
-

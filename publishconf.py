@@ -10,7 +10,7 @@ from pelicanconf import *
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = "https://wallytutor.github.io/outdoors"
 
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 
