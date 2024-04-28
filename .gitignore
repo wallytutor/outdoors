@@ -3,7 +3,7 @@
 ##############################################################################
 
 # Content produced locally by Pelican.
-/outdoors/output/
+/output/
 
 # Raw GPX tracks will all points.
 *.gpx.orig

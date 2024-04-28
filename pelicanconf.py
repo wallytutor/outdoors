@@ -9,7 +9,7 @@ PATH = "content"
 
 TIMEZONE = "Europe/Paris"
 
-DEFAULT_LANG = "English"
+DEFAULT_LANG = "en"
 
 THEME = "notmyidea"
 
