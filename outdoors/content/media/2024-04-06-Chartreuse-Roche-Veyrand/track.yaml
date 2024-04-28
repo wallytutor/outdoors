@@ -1,0 +1,16 @@
+tiles:
+  url: https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png
+  attr: OpenTopoMap
+
+altitude_range:
+  - 200
+  - 1400
+
+grid_interval: 0.025
+
+waypoints:
+  - name: Via Ferrata Roche Veyrand
+    url: https://www.chartreuse-tourisme.com/offres/via-ferrata-roche-veyrand-saint-pierre-dentremont-fr-2777366/
+    location:
+      - 45.424825187199886
+      - 5.850559308863115
