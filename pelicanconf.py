@@ -31,18 +31,24 @@ STATIC_PATHS = ["media"]
 # THEME & ITS SPECIFICS
 ###############################################################################
 
-THEME = "theme/pelican-twitchy"
-
-SHARE = True
-
-DISPLAY_PAGES_ON_MENU = True
-
-DISPLAY_CATEGORIES_ON_MENU = False
-
-DISPLAY_TAGS_ON_MENU = False
-
-CC_LICENSE = "CC-BY"
-
+# THEME = "../pelican-themes/aboutwilson"
+# THEME = "../pelican-themes/bold"
+# THEME = "../pelican-themes/BT3-Flat"
+# THEME = "../pelican-themes/built-texts"
+# THEME = "../pelican-themes/Casper2Pelican"
+# THEME = "../pelican-themes/cid"
+# THEME = "../pelican-themes/eevee"
+# THEME = "../pelican-themes/elegant"
+# THEME = "../pelican-themes/Flex"
+# THEME = "../pelican-themes/foundation-default-colours"
+# THEME = "../pelican-themes/gum"
+# THEME = "../pelican-themes/hyde"
+# THEME = "../pelican-themes/medius"
+# THEME = "../pelican-themes/mg"
+# THEME = "../pelican-themes/MinimalXY"
+# THEME = "../pelican-themes/Peli-Kiera"
+# THEME = "../pelican-themes/tuxlite_zf"
+THEME = "theme/zurb-F5-basic"
 
 ###############################################################################
 # LINKS
