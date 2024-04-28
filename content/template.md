@@ -11,3 +11,8 @@ Translation: false
 Status:      draft
 
 Add content here!
+
+<figure align="center">
+    <img src="" alt="" />
+    <figcaption></figcaption>
+</figure>
