@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-""""
-
+"""
 ```yaml
 tiles:
 
@@ -193,6 +192,17 @@ class GpxToHtml:
         )
         return route_map
 
+    @staticmethod
+    def feed_waypoint(cluster, point, bounds):
+        """ Feed a single waypoint to map. """
+        wp = Waypoint(**point)
+
+        if not wp.isinside(bounds):
+            return
+
+        popup = folium.Popup(wp.link, min_width=100, max_width=300)
+        folium.Marker(wp.location, popup=popup).add_to(cluster)
+
     def add_trace(self, coordinates, elevation):
         """ Create an elevation-colored trace. """
         folium.ColorLine(
@@ -211,13 +221,7 @@ class GpxToHtml:
         cluster = MarkerCluster().add_to(self._map)
 
         for point in waypoints:
-            wp = Waypoint(**point)
-
-            if not wp.isinside(bounds):
-                continue
-
-            popup = folium.Popup(wp.link, min_width=100, max_width=300)
-            folium.Marker(wp.location, popup=popup).add_to(cluster)
+            self.feed_waypoint(cluster, point, bounds)
 
     def add_gridlines(self, bounds, interval):
         """ Add gridlines to map with given parameters. """
@@ -257,6 +261,12 @@ class GpxToHtml:
         img_data = io.BytesIO(img_data)
         img = Image.open(img_data)
         img.save(saveas)
+
+
+OPENTOPOMAP = Tiles(
+    url  = "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+    attr = "OpenTopoMap"
+)
 
 
 if __name__ == "__main__":
