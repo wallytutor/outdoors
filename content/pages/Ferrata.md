@@ -28,6 +28,9 @@ L'objectif de cette page est de fournir le minimum d'informations pour l'organis
 
 #### Cascade de la Fare
 
+- [Station Village de Vaujany](https://www.vaujany.com/fr/vivez-lete/via-ferrata/)
+- [Site des Oisans](https://www.oisans.com/equipement/via-ferrata-de-la-cascade-de-la-fare/)
+
 #### La Colline Saint-Jacques
 
 - [Site officiel de la ville](https://www.cavaillon.fr/via-ferrata.html)
@@ -35,19 +38,38 @@ L'objectif de cette page est de fournir le minimum d'informations pour l'organis
 
 #### La Guinguette
 
+- [Haut Bugey Tourisme](https://www.hautbugey-tourisme.com/equipement/via-ferrata-de-la-guinguette-2/)
+- [Pérouges Bugey Tourisme](https://www.perouges-bugey-tourisme.com/decouvrir/la-via-ferrata-de-la-guinguette/)
+
 #### La Grotte à Carret
+
+- [Savoie Grand Revard](https://www.savoiegrandrevard.com/via-ferrata-de-la-grotte-a-carret-saint-jean-d-arvey.html)
+- [Rando Parc des Bauges](https://rando.parcdesbauges.com/trek/20084-Via-ferrata----Jules-Carret---Les-P-tchis)
 
 #### La Roche Veyrand
 
+- [Chartreuse Tourisme](https://www.chartreuse-tourisme.com/en/touristic_sheet/via-ferrata-roche-veyrand-saint-pierre-dentremont-en-2777366/)
+- [Isère Tourisme](https://www.isere-tourisme.com/equipements/ferrata-roche-veyrand)
+
 #### Les Mines du Grand Clôt
+
+- [Site des Oisans](https://www.oisans.com/equipement/via-ferrata-des-mines-du-grand-clot/)
 
 #### Le Nant de Rossane
 
+- [Les Aillons](https://www.lesaillons.com/la-via-ferrata-ecole-du-nant-de-rossane.html)
+
 #### Le Pont du Diable
+
+- [Mairie de Thueyts](https://www.thueyts.fr/vie-quotidienne/sport-et-loisirs/la-via-ferrata/)
 
 #### Le Roc du Cornillon
 
-#### Les Juscles
+- [Savoie Mont Blanc](https://www.savoie-mont-blanc.com/sports-de-grimpe/via-ferrata-du-roc-de-cornillon-132651/)
+
+#### Le Puy des Juscles
+
+- [Le Puy en Velay](https://www.lepuyenvelay-tourisme.fr/equipements/via-ferrata-le-puy-des-juscles/)
 
 #### Les Prises de la Bastille
 
@@ -58,11 +80,22 @@ L'objectif de cette page est de fournir le minimum d'informations pour l'organis
 
 #### Les Rochers de la Miramande
 
-#### Planfoy
+- [Marie de Saint-Jean-Lachalm](https://www.saintjeanlachalm.fr/via-ferrata.php)
 
-#### Via de Malzieu-Ville
+#### Via du Malzieu-Ville
+
+- [Mairie du Malzieu-Ville](https://le-malzieu-ville.fr/via-ferrata/)
+- [Departement de la Lozère](https://lozere.fr/la-ferrata-du-malzieu.html)
 
 #### Via du Parc Thermal
+
+- [Savoie Mont Blanc](https://www.savoie-mont-blanc.com/en/climbing-viaferrata-and-adventure-courses/via-ferrata-du-parc-thermal-5063203/)
+- [Ville de Saint-Gervais-les-Bains](https://www.saintgervais.com/jai-envie/activites/activites-outdoor-sportive/via-ferrata/)
+
+#### Via de Planfoy
+
+- [Pôle Vertical](https://www.pilat-tourisme.fr/planifier/activites-et-detente/sensations/avec-des-cordes/pole-vertical-via-ferrata-adultes-2655334)
+- [Massif du Pilat](https://massifdupilat.com/via-ferrata-planfoy/)
 
 #### Vias de Chamrousse
 
