@@ -27,7 +27,24 @@ waypoints = [
     }
 ]
 
-route_map = GpxToHtml.map_at_location(location, OPENTOPOMAP)
+tiles = OPENTOPOMAP
+
+opts = dict(
+    width         = "100%",
+    height        = "100%",
+    left          = "0%",
+    top           = "0%",
+    position      = "relative",
+    crs           = "EPSG3857",
+    control_scale = True,
+    prefer_canvas = False,
+    no_touch      = True,
+    disable_3d    = False,
+    png_enabled   = True,
+    zoom_control  = True
+)
+
+route_map = GpxToHtml.map_at_location(location, tiles, opts=opts)
 route_map.fit_bounds(bounds)
 
 cluster = MarkerCluster().add_to(route_map)

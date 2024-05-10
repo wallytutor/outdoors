@@ -171,25 +171,26 @@ class GpxToHtml:
         return bounds
 
     @staticmethod
-    def map_at_location(location, tiles):
+    def map_at_location(location, tiles, opts=None):
         """ Create map around given location with provided tiles. """
-        route_map = folium.Map(
-            location     = location,
-            width        = "100%",
-            height       = "100%",
-            left         = "0%",
-            top          = "0%",
-            position     = "relative",
-            tiles        = tiles.url,
-            attr         = tiles.attribution,
-            crs          = "EPSG3857",
-            control_scale= True,
-            prefer_canvas= False,
-            no_touch     = True,
-            disable_3d   = False,
-            png_enabled  = True,
-            zoom_control = False
+        opts = opts if opts is not None else dict(
+            width         = "100%",
+            height        = "100%",
+            left          = "0%",
+            top           = "0%",
+            position      = "relative",
+            crs           = "EPSG3857",
+            control_scale = True,
+            prefer_canvas = False,
+            no_touch      = True,
+            disable_3d    = False,
+            png_enabled   = True,
+            zoom_control  = False
         )
+
+        route_map = folium.Map(location = location, tiles = tiles.url,
+                               attr = tiles.attribution, **opts)
+
         return route_map
 
     @staticmethod
