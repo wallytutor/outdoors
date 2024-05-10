@@ -1,111 +1,23 @@
 # -*- coding: utf-8 -*-
 from folium.plugins import MarkerCluster
 from gpxtohtml import GpxToHtml
+from gpxtohtml import Waypoint
 import gpxtohtml
+import numpy as np
 import yaml
 
-# This is Grenoble:
-location = [45.1885, 5.7245]
+cnfpath = "content/media/via-ferrata/config.yaml"
 
-# Waypoints (TODO use YAML file):
-waypoints = [
-    {
-        "name": "Cascade de la Fare",
-        "url": "https://www.oisans.com/equipement/via-ferrata-de-la-cascade-de-la-fare/",
-        "location": [45.15491, 6.08914]
-    },
-    {
-        "name": "La Colline Saint-Jacques",
-        "url": "https://www.cavaillon.fr/via-ferrata.html",
-        "location": [43.83862106364569, 5.0334028113894185]
-    },
-    {
-        "name": "La Guinguette",
-        "url": "https://www.perouges-bugey-tourisme.com/decouvrir/la-via-ferrata-de-la-guinguette/",
-        "location": [45.916141, 5.519307]
-    },
-    {
-        "name": "La Grotte à Carret (La P'tchi)",
-        "url": "https://www.savoiegrandrevard.com/via-ferrata-de-la-grotte-a-carret-saint-jean-d-arvey.html",
-        "location": [45.60992252380694, 5.97890216136454]
-    },
-    {
-        "name": "La Roche Veyrand",
-        "url": "https://www.chartreuse-tourisme.com/en/touristic_sheet/via-ferrata-roche-veyrand-saint-pierre-dentremont-en-2777366/",
-        "location": [45.42480723451047, 5.848478034379624]
-    },
-    {
-        "name": "Les Mines du Grand Clôt",
-        "url": "https://www.oisans.com/equipement/via-ferrata-des-mines-du-grand-clot/",
-        "location": [45.0423567578637, 6.26036167144775]
-    },
-    {
-        "name": "Le Nant de Rossane",
-        "url": "https://www.lesaillons.com/la-via-ferrata-ecole-du-nant-de-rossane.html",
-        "location": [45.61207983560336, 6.096378493778738]
-    },
-    {
-        "name": "Le Pont du Diable",
-        "url": "https://www.thueyts.fr/vie-quotidienne/sport-et-loisirs/la-via-ferrata/",
-        "location": [44.673854660109384, 4.224149283367626]
-    },
-    {
-        "name": "Le Roc du Cornillon",
-        "url": "https://www.savoie-mont-blanc.com/sports-de-grimpe/via-ferrata-du-roc-de-cornillon-132651/",
-        "location": [45.69050387212894, 5.84629010845901]
-    },
-    {
-        "name": "Le Puy des Juscles",
-        "url": "https://www.lepuyenvelay-tourisme.fr/equipements/via-ferrata-le-puy-des-juscles/",
-        "location": [45.10921178133776, 4.050917664726794]
-    },
-    {
-        "name": "Les Prises de la Bastille",
-        "url": "https://www.grenoble.fr/2882-via-ferrata-et-escalade-a-la-bastille.htm",
-        "location": [45.19468, 5.71966]
-    },
-    {
-        "name": "Les Rochers de la Miramande",
-        "url": "https://www.saintjeanlachalm.fr/via-ferrata.php",
-        "location": [44.95409864385212, 3.712982936087471]
-    },
-    {
-        "name": "Via du Malzieu-Ville",
-        "url": "https://le-malzieu-ville.fr/via-ferrata/",
-        "location": [44.86387839973939, 3.322415481903932]
-    },
-    {
-        "name": "Via du Parc Thermal",
-        "url": "https://www.savoie-mont-blanc.com/en/climbing-viaferrata-and-adventure-courses/via-ferrata-du-parc-thermal-5063203/",
-        "location": [45.89767082842309, 6.70615220335208]
-    },
-    {
-        "name": "Via de Planfoy",
-        "url": "https://www.pilat-tourisme.fr/planifier/activites-et-detente/sensations/avec-des-cordes/pole-vertical-via-ferrata-adultes-2655334",
-        "location": [45.394430409154175, 4.44627762360306]
-    },
-    {
-        "name": "Vias de Chamrousse (Lacs Robert)",
-        "url": "https://www.chamrousse.com/plan-via-ferratas.html",
-        "location": [45.130000, 5.910000]
-    },
+with open(cnfpath, encoding="utf-8") as fp:
+    cnf = yaml.safe_load(fp)
 
-]
+waypoints = cnf["waypoints"]
 
-# Tolerance for bounds:
-tol = 0.1
+coordinates = Waypoint.get_coordinates(waypoints)
 
-# Bounds computed based on waypoints:
-bounds = [
-    (
-        min(waypoints, key=lambda p: p["location"][0])["location"][0] - tol,
-        min(waypoints, key=lambda p: p["location"][1])["location"][1] - tol
-    ),
-    (
-        max(waypoints, key=lambda p: p["location"][0])["location"][0] + tol,
-        max(waypoints, key=lambda p: p["location"][1])["location"][1] + tol
-    )
-]
+bounds = GpxToHtml.get_bounds(coordinates)
+
+location = np.mean(coordinates, axis=0)
 
 tiles = gpxtohtml.OPENTOPOMAP
 

@@ -69,6 +69,15 @@ class Waypoint:
         """ Provides access to attribute. """
         return f"<a href=\"{self._url}\" target=\"_blank\">{self._name}</a>"
 
+    @classmethod
+    def get_coordinates(cls, waypoints):
+        """ Extract coordinates from a list of waypoints. """
+        def extractor(w):
+            # Do not insist in creating new objects here:
+            return w["location"] if isinstance(w, dict) else w.location
+                
+        return [extractor(w) for w in waypoints]
+
 
 class GpxToHtml:
     """ Convert a GPX track to an embedable HTML file. """

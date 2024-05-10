@@ -100,3 +100,5 @@ L'objectif de cette page est de fournir le minimum d'informations pour l'organis
 #### Vias de Chamrousse
 
 Deux vias sont documentées dans cette section, celles des Lacs Robert et la via Trois Fontaines.
+
+- [Chamrousse](https://www.chamrousse.com/plan-via-ferratas.html)
