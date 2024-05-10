@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
 from folium.plugins import MarkerCluster
-from gpxtohtml import OPENTOPOMAP
 from gpxtohtml import GpxToHtml
+import gpxtohtml
 
-# Rough bounds of France.
-bounds = [(44.0, 2.0), (50.0, 7.0)]
-
-# This is Paris:
-location = [48.8575, 2.3514]
+# This is Grenoble:
+location = [45.1885, 5.7245]
 
 waypoints = [
     {
@@ -27,13 +24,27 @@ waypoints = [
     }
 ]
 
-tiles = OPENTOPOMAP
+# Computed based on waypoints
+bounds = [
+    (
+        min(waypoints, key=lambda p: p["location"][0])["location"][0],
+        min(waypoints, key=lambda p: p["location"][1])["location"][1]
+    ),
+    (
+        max(waypoints, key=lambda p: p["location"][0])["location"][0],
+        max(waypoints, key=lambda p: p["location"][1])["location"][1]
+    )
+]
+
+tiles = gpxtohtml.OPENTOPOMAP
 
 opts = dict(
     width         = "100%",
     height        = "100%",
     left          = "0%",
     top           = "0%",
+    min_zoom      = 8,
+    max_zoom      = 18,
     position      = "relative",
     crs           = "EPSG3857",
     control_scale = True,
@@ -41,7 +52,7 @@ opts = dict(
     no_touch      = True,
     disable_3d    = False,
     png_enabled   = True,
-    zoom_control  = True
+    zoom_control  = True,
 )
 
 route_map = GpxToHtml.map_at_location(location, tiles, opts=opts)

@@ -1,15 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-```yaml
-tiles:
-
-  - url: https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png
-    attr: OpenTopoMap
-
-  - url: https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png
-    attr: CyclOSM
-```
-"""
 from branca.colormap import LinearColormap
 from folium.plugins import MarkerCluster
 from pathlib import Path
@@ -264,9 +253,24 @@ class GpxToHtml:
         img.save(saveas)
 
 
+OPENSTREETMAPFR = Tiles(
+    url  = "https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png",
+    attr = "&copy; OpenStreetMap France"
+)
+
 OPENTOPOMAP = Tiles(
     url  = "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
-    attr = "OpenTopoMap"
+    attr = "&copy; OpenTopoMap"
+)
+
+CYCLOSM = Tiles(
+    url  = "https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png",
+    attr = "&copy; CyclOSM"
+)
+
+MTBMAP = Tiles(
+    url  = "http://tile.mtbmap.cz/mtbmap_tiles/{z}/{x}/{y}.png",
+    attr = "&copy; MtbMap"
 )
 
 
