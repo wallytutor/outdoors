@@ -18,6 +18,15 @@ virtualenv venv
 python -m pip install -r requirements.txt"
 ```
 
-## To-do
+- For enabling a local server you can run `pelican -r -l`.
 
-- [ ] Create own template or adapt some of the community ones to my needs.
+- For adding new GPX traces to activities, perform the following steps:
+
+    1. Create a new directory under [content/media](content/media/) for the activity.
+    1. Save the GPX track under this directory with the name `track.gpx`.
+    1. Create a `track.yaml` with configurations (copy from an existing directory).
+    1. Run `python gpxtohtml.py` to generate the corresponding map.
+
+- For new Via Ferrata tracks, there is a dedicated script `gpxviaferrata.py`.
+
+- For reducing images to a fraction of size for publishing, check `imgresize.py`.
