@@ -32,10 +32,10 @@ opts = dict(
     crs           = "EPSG3857",
     control_scale = True,
     prefer_canvas = False,
-    no_touch      = True,
+    no_touch      = False,
     disable_3d    = False,
     png_enabled   = True,
-    zoom_control  = True,
+    zoom_control  = True
 )
 
 route_map = GpxToHtml.map_at_location(location, tiles, opts=opts)

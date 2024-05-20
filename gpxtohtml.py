@@ -176,14 +176,16 @@ class GpxToHtml:
             height        = "100%",
             left          = "0%",
             top           = "0%",
+            min_zoom      = 5,
+            max_zoom      = 18,
             position      = "relative",
             crs           = "EPSG3857",
             control_scale = True,
             prefer_canvas = False,
-            no_touch      = True,
+            no_touch      = False,
             disable_3d    = False,
             png_enabled   = True,
-            zoom_control  = False
+            zoom_control  = True
         )
 
         route_map = folium.Map(location = location, tiles = tiles.url,
