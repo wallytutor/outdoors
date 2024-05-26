@@ -11,12 +11,35 @@ pip install virtualenv
 # Create a local environment:
 virtualenv venv
 
+# Alternativelly use built-in:
+# python -m venv venv
+
 # Activate the environment:
 ./venv/Scripts/activate
 
 # Install version controlled requirements:
-python -m pip install -r requirements.txt"
+python -m pip install -r requirements.txt
 ```
+
+For a full development version simply install the following packages:
+
+```bash
+# Explicit requirements list:
+pip install \
+    branca \
+    folium \
+    gpxpy \
+    numpy \
+    pandas \
+    pelican[markdown] \
+    pillow \
+    pyyaml
+
+# Generate a new requirements.txt:
+pip freeze > requirements.txt
+```
+
+## Creating content
 
 - For enabling a local server you can run `pelican -r -l`.
 

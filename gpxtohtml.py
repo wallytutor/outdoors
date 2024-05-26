@@ -182,7 +182,7 @@ class GpxToHtml:
             crs           = "EPSG3857",
             control_scale = True,
             prefer_canvas = False,
-            no_touch      = False,
+            no_touch      = True,
             disable_3d    = False,
             png_enabled   = True,
             zoom_control  = True
