@@ -5,6 +5,10 @@ Lang:        en
 Translation: false
 Status:      hidden
 
+### Mobilité douce
+
+- [Partir Ici](https://partir-ici.fr/envies/sport-nature/)
+
 ### Vélo de Montagne
 
 - [Sites FFC](https://sitesvtt.ffc.fr/sites/)
