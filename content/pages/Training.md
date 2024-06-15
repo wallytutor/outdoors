@@ -82,7 +82,7 @@ Cette séance est intermédiaire (1h environ) et à pour but le renforcement du 
 Séance courte (30 mn sans échauffement) complémentaire à celle du jeudi mais plutôt orienté machines. Au préable réaliser une activité cardio sans impacte en salle ou dehors (vélo), de préférence le soir pour avoir le temps de récupérer le l'activité du jeudi soir.
 
 <center>
-<table>
+<table class="training-table">
 <tr>
   <th>Description</th>
   <th>Séries</th>
