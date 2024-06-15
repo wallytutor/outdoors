@@ -18,7 +18,7 @@ Ceci est mon plan d'entrainement musculaire personnel. Sa cible c'est le renforc
 Cette séance est intermédiaire (1h environ) et à pour but le renforcement du genou. Elle reste compatible avec autre activité dans la journée, alors préconiser sa réalisation le matin pour être disponible pour autre type d'entrainement le soir (vélo, course, trail, ...).
 
 <center>
-<table>
+<table class="training-table">
 <tr>
   <th>Description</th>
   <th>Séries</th>
