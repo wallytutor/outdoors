@@ -11,6 +11,36 @@ Ceci est mon plan d'entrainement musculaire personnel. Sa cible c'est le renforc
 
 #### Mardi
 
+Séance de escalade-résistance. Travailler surtout le placement des pieds, force maximale en suspension, et resistance (séries longues).
+
+<center>
+<table class="training-table">
+<tr>
+  <th>Description</th>
+  <th>Séries</th>
+  <th>Repétitions</th>
+  <th>Charge</th>
+  <th>Repos</th>
+</tr>
+<!-- row -->
+<tr>
+  <td>Traversées</td>
+  <td>3 à 6</td>
+  <td>-</td>
+  <td>10 min.</td>
+  <td>2 min.</td>
+</tr>
+<!-- row -->
+<tr>
+  <td>Pompes</td>
+  <td>3</td>
+  <td>10</td>
+  <td>-</td>
+  <td>2 min.</td>
+</tr>
+</table>
+</center>
+
 #### Mercredi
 
 #### Jeudi
