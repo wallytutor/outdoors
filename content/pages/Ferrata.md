@@ -26,6 +26,13 @@ L'objectif de cette page est de fournir le minimum d'informations pour l'organis
 
 ---
 
+#### Autres sites utiles
+
+- [Conditions montagne (La Chamoniarde)](https://www.chamoniarde.com/montagne/conditions-montagne#)
+- [Via Ferrata FR](https://www.viaferrata-fr.net/)
+
+---
+
 #### Cascade de la Fare
 
 - [Station Village de Vaujany](https://www.vaujany.com/fr/vivez-lete/via-ferrata/)
@@ -35,6 +42,10 @@ L'objectif de cette page est de fournir le minimum d'informations pour l'organis
 
 - [Site officiel de la ville](https://www.cavaillon.fr/via-ferrata.html)
 - [Destination Luberon](https://www.destinationluberon.com/bouger/la-via-ferrata-de-cavaillon)
+
+#### La Curalla
+
+- [Passy Mont Blanc](https://www.passy-mont-blanc.com/activites/escalade-et-via-ferrata/via-ferrata/la-via-ferrata-de-curalla/?via-ferrata-de-curalla-s191925)
 
 #### La Guinguette
 
@@ -102,3 +113,7 @@ L'objectif de cette page est de fournir le minimum d'informations pour l'organis
 Deux vias sont documentées dans cette section, celles des Lacs Robert et la via Trois Fontaines.
 
 - [Chamrousse](https://www.chamrousse.com/plan-via-ferratas.html)
+
+#### Via des Evettes
+
+- [Chamonix-Mont-Blanc](https://www.chamonix.com/activites/via-ferrata-dans-la-vallee/via-ferrata-des-evettes)

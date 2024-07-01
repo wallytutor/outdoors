@@ -16,3 +16,9 @@ Status:      hidden
 - [Cotations de difficulté](https://alpinemag.fr/vtt-cotations-difficulte/)
 
 - [Autour du Pilat](https://www.parc-naturel-pilat.fr/des-decouvertes/randonnee/pilat-a-velo/)
+
+- [Gravel Passion](https://www.gravelpassion.fr/)
+
+### Trail
+
+- [Finishers](https://www.finishers.com/courses)
