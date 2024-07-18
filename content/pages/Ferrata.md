@@ -57,6 +57,11 @@ L'objectif de cette page est de fournir le minimum d'informations pour l'organis
 - [Savoie Grand Revard](https://www.savoiegrandrevard.com/via-ferrata-de-la-grotte-a-carret-saint-jean-d-arvey.html)
 - [Rando Parc des Bauges](https://rando.parcdesbauges.com/trek/20084-Via-ferrata----Jules-Carret---Les-P-tchis)
 
+#### La Roche à l'Agathe
+
+- [Mairie Thônes](http://www.mairie-thones.fr/fr/information/99305/via-ferrata)
+- [Thônes - Coeur des Vallées](https://www.thonescoeurdesvallees.com/activites/aventure-et-sensations/via-ferrata/#)
+
 #### La Roche Veyrand
 
 - [Chartreuse Tourisme](https://www.chartreuse-tourisme.com/en/touristic_sheet/via-ferrata-roche-veyrand-saint-pierre-dentremont-en-2777366/)
@@ -92,6 +97,22 @@ L'objectif de cette page est de fournir le minimum d'informations pour l'organis
 #### Les Rochers de la Miramande
 
 - [Marie de Saint-Jean-Lachalm](https://www.saintjeanlachalm.fr/via-ferrata.php)
+
+#### Via des Étroits
+
+- [Le Dévoluy](https://www.ledevoluy.com/ete/offres/via-ferrata-des-etroits-devoluy-fr-ete-4161036/)
+
+#### Vias de la Cascade et du Grand Bec
+
+Ces deux ferratas se trouvant à proximité dans l'Alpe du Grand Serre, je les documente ensemble ici:
+
+- [Matheysine (Cascade)](https://www.matheysine-tourisme.com/fr/catalogue/detail/via-ferrata-de-la-cascade/?page_id=1086)
+- [Matheysine (Grand Bec)](https://www.matheysine-tourisme.com/fr/catalogue/detail/via-ferrata-du-grand-bec/?page_id=1086)
+
+#### Via du Grand Frisson (Barrage du Sautet)
+
+- [Isère Tourisme](https://www.isere-tourisme.com/equipements/ferrata-du-grand-frisson)
+- [Matheysine Communauté des Communes](https://www.ccmatheysine.fr/web/culture-loisirs/via-ferrata/)
 
 #### Via du Malzieu-Ville
 

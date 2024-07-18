@@ -16,6 +16,10 @@ waypoints:
   url: https://www.savoiegrandrevard.com/via-ferrata-de-la-grotte-a-carret-saint-jean-d-arvey.html
   location: [45.60992252380694, 5.97890216136454]
 
+- name: La Roche à l'Agathe
+  url: http://www.mairie-thones.fr/fr/information/99305/via-ferrata
+  location: [45.88439082390641, 6.322625349524408]
+
 - name: La Roche Veyrand
   url: https://www.chartreuse-tourisme.com/en/touristic_sheet/via-ferrata-roche-veyrand-saint-pierre-dentremont-en-2777366/
   location: [45.42480723451047, 5.848478034379624]
@@ -47,6 +51,26 @@ waypoints:
 - name: Les Rochers de la Miramande
   url: https://www.saintjeanlachalm.fr/via-ferrata.php
   location: [44.95409864385212, 3.712982936087471]
+
+# TODO: remove comment once done!
+- name: Via des Étroits
+  url: https://www.ledevoluy.com/ete/offres/via-ferrata-des-etroits-devoluy-fr-ete-4161036/
+  location: [44.70041534821668, 5.929887900584031]
+
+# TODO: remove comment once done!
+- name: Via de la Cascade
+  url: https://www.matheysine-tourisme.com/fr/catalogue/detail/via-ferrata-de-la-cascade/?page_id=1086
+  location: [45.02920621381619, 5.864465957133331]
+
+# TODO: remove comment once done!
+- name: Via du Grand Bec
+  url: https://www.matheysine-tourisme.com/fr/catalogue/detail/via-ferrata-du-grand-bec/?page_id=1086
+  location: [45.02588165864381, 5.874645929600385]
+
+# TODO: remove comment once done!
+- name: Via du Grand Frisson (Barrage du Sautet)
+  url: https://www.isere-tourisme.com/equipements/ferrata-du-grand-frisson
+  location: [44.81765911935718, 5.909293423767236]
 
 - name: Via du Malzieu-Ville
   url: https://le-malzieu-ville.fr/via-ferrata/
