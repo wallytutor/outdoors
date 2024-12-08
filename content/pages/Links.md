@@ -22,3 +22,11 @@ Status:      hidden
 ### Trail
 
 - [Finishers](https://www.finishers.com/courses)
+
+- [Premier Marathon](https://premier-marathon.com/)
+
+### Neige et glace
+
+- [Data Avalanche](https://www.data-avalanche.org/)
+
+- [Ice Climbing Cogne](https://www.iceclimbingcogne.com/)
