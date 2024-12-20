@@ -1,5 +1,5 @@
 Title:       Raquettes
-Slug:        raquettes
+Slug:        Raquettes
 Author:      Walter Dal'Maz Silva
 Lang:        fr
 Translation: false
